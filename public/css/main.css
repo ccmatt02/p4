@@ -1,0 +1,80 @@
+
+.banner {
+    background: #9b002c;
+    text-align: center;
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 3em;
+    display: table;
+}
+
+.banner-head-old {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-family: fantasy;
+    color: black;
+    font-weight: 1500;
+}
+
+.banner-head {
+  margin-bottom: 0;
+  font-size: 3em;
+  font-family: serif;
+  color: black;
+  font-weight: 1500;
+}
+
+.topcorner{
+    position: absolute;
+    top:10px;
+    right: 10px;
+ }
+
+.main-table {
+  text-align:center;
+  margin:auto;
+  text-align:left;
+}
+
+.main-table tr:nth-child(1){
+  background-color: grey;
+  font-weight: bolder;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+#formLeft {
+	margin-left: 20px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+
+    text-align: center;;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #9b002c;
+    font-weight: 500;
+}
