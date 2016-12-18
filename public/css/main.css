@@ -34,6 +34,39 @@
     right: 10px;
  }
 
+ .image-size {
+   width: 663px;
+   height: 445px;
+ }
+
+ .view-rooms-text {
+   text-align: center;
+ }
+
+ .view-rooms-lorem {
+   padding-left: 200px;
+   text-align: center;
+ }
+
+.room-small-image{
+  width: 150px;
+  height 100px;
+}
+
+.short-desc {
+  padding: 20px;
+}
+
+ .logout-text {
+   position: relative;
+   color: black;
+   background-color: grey;
+   padding: 2px;
+   top: 30px;
+   right: 30px;
+   font-size: 14pt;
+ }
+
 .main-table {
   text-align:center;
   margin:auto;

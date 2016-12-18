@@ -6,9 +6,9 @@
 	<meta charset='utf-8'>
 
   	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link href='css/main.css' rel='stylesheet'>
+    <link href='/css/main.css' rel='stylesheet'>
 
-
+    @yield('addToHead')
 </head>
 <body>
 	<a href='/'>
@@ -20,18 +20,11 @@
           </div>
 
         <div class="topcorner">
-        <!-- <div class="pure-u-1-5">
-          <form class="pure-form">
-            <fieldset class="pure-group">
-              <input type="text" class="pure-input-1-2" placeholder="Email">
-              <input type="text" class="pure-input-1-2" placeholder="Password">
-              <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Login</button>
-            </fieldset>
-          </form>
-        </div> -->
         @if(Auth::check())
           <a href="/logout">
-            Logout
+            <div class="logout-text">
+              Logout
+            </div>
           </a>
         @else
           <form method="POST" action="{{ url('/login') }}" class="pure-form">

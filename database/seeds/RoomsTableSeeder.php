@@ -15,7 +15,15 @@ class RoomsTableSeeder extends Seeder
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
           'room_number' => 101,
-          'image_link' => 'http://hotelpropeller.com/wp-content/uploads/2013/04/Bed-and-Breakfast-Facebook-Page.jpg',
+          'image_link' => '/images/bedroom-1.jpg',
+          'description' => 'sample descripton text',
+        ]);
+
+        DB::table('rooms')->insert([
+          'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+          'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+          'room_number' => 102,
+          'image_link' => '/images/bedroom-2.jpg',
           'description' => 'sample descripton text',
         ]);
     }
