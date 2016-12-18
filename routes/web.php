@@ -16,9 +16,9 @@ Route::get('/', 'HomeController@index')->name('index');
 Route::get('/rooms', 'RoomController@index')->name('rooms.index');
 Route::get('/rooms/show/{room_number}', 'RoomController@create')->name('rooms.create');
 Route::post('/rooms/book', 'RoomController@store')->name('rooms.store');
+Route::get('/rooms/book/show', 'RoomController@show')->name('rooms.show');
+Route::get('/rooms/book/{booking_id}', 'RoomController@update')->name('rooms.update');
 /*
-Route::get('/rooms/book/{booking_id}', 'RoomController@show')->name('rooms.show');
-Route::put('/rooms/book/{booking_id}', 'RoomController@update')->name('rooms.update');
 Route::delete('/rooms/book/{booking_id}', 'RoomsController@delete')->name('rooms.delete');
 */
 Route::get('/debug', function() {

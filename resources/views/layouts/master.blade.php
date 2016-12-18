@@ -26,6 +26,12 @@
               Logout
             </div>
           </a>
+          <br>
+          <a href="/rooms/book/show">
+            <div class ="logout-text">
+              View your bookings
+            </div>
+          </a>
         @else
           <form method="POST" action="{{ url('/login') }}" class="pure-form">
             <fieldset class="pure-group">

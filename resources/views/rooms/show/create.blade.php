@@ -18,7 +18,7 @@
 @section('mainContent')
 <div class="pure-g">
   <div class="pure-u-1-3">
-    <img src="{{ $rooms->image_link }}" class="image-size">
+    <img src="{{ $room->image_link }}" class="image-size">
   </div>
   <div class="pure-u-2-3">
     <br>
@@ -37,7 +37,7 @@
           {{ csrf_field() }}
           <input id="datepicker" name="startDate" placeholder="Check In">
           <input id="datepickerEnd" name="endDate" placeholder="Check Out">
-          <input type="hidden" name="room_number" value="{{ $rooms->room_number }}">
+          <input type="hidden" name="room_number" value="{{ $room->room_number }}">
           <button type="submit" class="pure-button pure-button-primary">
             Book!
           </button>

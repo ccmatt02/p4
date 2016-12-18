@@ -18,8 +18,8 @@ class RoomController extends Controller {
 
   public function create($room_number)
   {
-    $rooms = DB::table('rooms')->where('room_number', 'LIKE', $room_number)->first();
-    return view('rooms.show.create')->with('rooms', $rooms);
+    $room = DB::table('rooms')->where('room_number', 'LIKE', $room_number)->first();
+    return view('rooms.show.create')->with('room', $room);
   }
 
   public function store(Request $request)
@@ -37,6 +37,21 @@ class RoomController extends Controller {
       'check_out' => $endDate
     ]);
 
+    $room = DB::table('rooms')->where('id', 'LIKE', $room_id )->first();
+    return view('rooms.book.store')->with('room', $room)->with('startDate', $startDate)->with('endDate', $endDate);
+  }
+
+  public function show()
+  {
+    $bookings = DB::table('rooms_users')->where('user_id', 'LIKE', Auth::user()->id)->get();
+    $rooms = DB::table('rooms')->get();
+
+    return view('rooms.book.show')->with('bookings', $bookings)->with('rooms', $rooms);
+  }
+
+  public function update()
+  {
+    
   }
 
   /*
