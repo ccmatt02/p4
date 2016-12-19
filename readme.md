@@ -7,7 +7,7 @@
 A web application to allow users to search for and make reservations at a small bed and breakfast.
 
 ## Demo
- * <TODO>
+ * <http://www.screencast.com/t/ZeUjRm66>
 
 ## Details for teaching team
 	Bookings are already created for both Jill and Jamal

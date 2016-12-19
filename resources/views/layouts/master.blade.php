@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>@yield('title')</title>
+	<title>Not a Fake Bed and Breakfast</title>
 	<meta charset='utf-8'>
 
   	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
