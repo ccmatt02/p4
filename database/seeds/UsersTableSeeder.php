@@ -11,20 +11,25 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('users')->insert([
-        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
-        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-        'name' => "Jill",
-        'email' => 'jill@harvard.edu',
-        'password' => '$2y$10$OQlBXND1UQqcNLEjRgyznuAeTBQo1lvY5khQD1FB8v9RA3Ol2JOr6',
-      ]);
 
-      DB::table('users')->insert([
-        'created_at' => Carbon\Carbon::now()->toDateTimeString(),
-        'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
-        'name' => "Jamal",
-        'email' => 'jamal@harvard.edu',
-        'password' => '$2y$10$FD7z1j/3GN2djVzzHasREeMRP62WHVNmeZnlkPZfmSQvggzzDLUge',
-      ]);
+
+      $users = [
+        ['jill@harvard.edu','jill','helloworld'],
+        ['jamal@harvard.edu','jamal','helloworld'],
+        ['ccmatt02@gmail.com','matt','helloworld']
+      ];
+
+
+      foreach($users as $user) {
+        DB::table('users')->insert([
+          'created_at' => Carbon\Carbon::now()->toDateTimeString(),
+          'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
+          'email' => $user[0],
+          'name' => $user[1],
+          'password' => Hash::make($user[2]),
+        ]);
+      }
+
     }
+
 }
