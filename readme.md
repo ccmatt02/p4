@@ -13,6 +13,7 @@ A web application to allow users to search for and make reservations at a small 
 	Bookings are already created for both Jill and Jamal
 
 ## Outside sources
-* JQuery:  <https://jquery.com/>
-* PureCSS: <http://purecss.io/>
-* Laravel: <https://laravel.com/>
+* PixelBay: <https://pixabay.com/>
+* JQuery:   <https://jquery.com/>
+* PureCSS:  <http://purecss.io/>
+* Laravel:  <https://laravel.com/>
