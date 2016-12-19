@@ -15,10 +15,12 @@
       hic etiam dolore. Si longus, levis. Quare attende, quaeso. Minime vero, inquit ille, consentit. Deinde<br>
       dolorem quem maximum? Graece donan, Latine voluptatem vocant. Primum divisit ineleganter; At multis se<br>
       probavit. Non est igitur voluptas bonum. Sic consequentibus vestris sublatis prima tolluntur.
-    <div>
-    <br><br>
-    <a href="/rooms" class="view-rooms-text"> <h3> View rooms </h3> </a>
+
+      <br><br>
+      <div class="body-link-button">
+        <a href="/rooms"> View rooms </a>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 @endsection

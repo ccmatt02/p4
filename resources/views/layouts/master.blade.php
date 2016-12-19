@@ -41,9 +41,15 @@
             <button type="submit" class="pure-button pure-input-1 pure-button-primary">
               Login
             </button>
-            <a href="{{ url('/password/reset') }}">
-              Forgot Your Password?
-            </a>
+            <div class="link-button">
+              <a href="{{ url('/password/reset') }}">
+                Forgot Your Password?
+              </a>
+              <a href="/register">
+                New user
+              </a>
+            </div>
+
           </fieldset>
           </form>
         @endif
