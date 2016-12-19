@@ -59,7 +59,7 @@ class RoomController extends Controller {
 
   public function alter(Request $request, $booking_id)
   {
-    $booking = Rooms_users::where('id', 'LIKE', $booking_id)->first();
+    $booking = rooms_users::where('id', 'LIKE', $booking_id)->first();
     $startDate = date("Y-m-d", strtotime($request->input('startDate')));
     $endDate = date("Y-m-d", strtotime($request->input('endDate')));
     $room = DB::table('rooms')->where('id', 'LIKE', $booking->room_id)->first();
@@ -74,7 +74,7 @@ class RoomController extends Controller {
 
   public function delete($booking_id)
   {
-    $booking = Rooms_users::where('id', 'LIKE', $booking_id)->first();
+    $booking = rooms_users::where('id', 'LIKE', $booking_id)->first();
     $room = DB::table('rooms')->where('id', 'LIKE', $booking->room_id)->first();
     $startDate = $booking->check_in;
     $endDate = $booking->check_out;
