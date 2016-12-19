@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Carbon;
 use Auth;
 use DB;
-use App\Rooms_users;
+use App\rooms_users;
 
 class RoomController extends Controller {
 
